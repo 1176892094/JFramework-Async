@@ -9,8 +9,8 @@
         await new WaitForEndOfFrame();//等待这一帧结束
         await new WaitWhile(Test);//等待Test结果为false时退出
         await new WaitUntil(Test);//等待Test结果为true时退出
-        await SceneManager.LoadSceneAsync("SceneName");
-        await Resources.LoadAsync("ResourcesName");
+        await SceneManager.LoadSceneAsync("SceneName");//等待异步加载场景完成
+        await Resources.LoadAsync("ResourcesName");//等待异步资源加载完成
         AsyncOperation asyncOperation = new AsyncOperation();
         await asyncOperation;//等待异步操作
         ResourceRequest request = new ResourceRequest();
