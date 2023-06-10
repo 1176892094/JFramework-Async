@@ -15,10 +15,16 @@
         await asyncOperation;//等待异步操作
         ResourceRequest request = new ResourceRequest();
         await request;//等待资源请求
+        await Test2();//等待协程完成
     }
     
     private bool Test()
     {
         return true;
+    }
+    
+    private IEnumerator Test2()
+    {
+        yield return null;
     }
 ```
