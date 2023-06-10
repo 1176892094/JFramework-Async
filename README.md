@@ -7,8 +7,8 @@
         await new WaitForSecondsRealtime(1);//等待1秒，不受timeScale影响
         await new WaitForFixedUpdate();//等待直到下一次FixedUpdate执行
         await new WaitForEndOfFrame();//等待这一帧结束
-        await new WaitWhile(WaitTime);//等待WaitTime结果为false时退出
-        await new WaitUntil(WaitTime);//等待WaitTime结果为true时退出
+        await new WaitWhile(Test);//等待Test结果为false时退出
+        await new WaitUntil(Test);//等待Test结果为true时退出
         await SceneManager.LoadSceneAsync("SceneName");
         await Resources.LoadAsync("ResourcesName");
         AsyncOperation asyncOperation = new AsyncOperation();
@@ -17,7 +17,7 @@
         await request;//等待资源请求
     }
     
-    private bool WaitTime()
+    private bool Tesst()
     {
         return true;
     }
