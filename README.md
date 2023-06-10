@@ -17,7 +17,7 @@
         await request;//等待资源请求
     }
     
-    private bool Tesst()
+    private bool Test()
     {
         return true;
     }
